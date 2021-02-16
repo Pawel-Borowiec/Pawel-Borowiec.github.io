@@ -1,6 +1,8 @@
 body {
     background-color: rgb(233, 232, 232);
     color:#222 ;
+    display: flex;
+    flex-direction: column;
 }
 
 nav ul {
@@ -36,10 +38,27 @@ nav ul li a:hover:not(.active) {
 }
 
 .curriculum {
-    color: rgb(107, 208, 255);
-    font-family: 'Nova Flat';font-size: 76px;
+    color: rgb(67, 9, 226);
+    font-family: 'Nova Flat';font-size: 40px;
     padding: 28x;
 }
+@media all and (max-width:1280px) {
+    .curriculum {
+        color: rgb(9, 226, 63);
+        font-family: 'Nova Flat';font-size: 50px;
+        padding: 28x;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .curriculum {
+        color: rgb(101, 76, 170);
+        font-family: 'Nova Flat';font-size: 46px;
+        padding: 28x;
+    }
+}
+
+
 
 footer {
     background-color: rgb(107, 208, 255);
@@ -162,6 +181,11 @@ h1{
     display: flex;
     flex-direction: column;
     border-radius: 10px;
+}
+@media all and (max-width: 800px) {
+    .project-description{
+        max-width: 90%;
+    }
 }
 
 .project-image{
