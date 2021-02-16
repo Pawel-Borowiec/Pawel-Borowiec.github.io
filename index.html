@@ -3,18 +3,159 @@
         <title>Pawel Borowiec - Portfolio</title>
         <link rel="stylesheet" href="css/style.css">
         <link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/da940a54b6.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/jquery.scrollTo.min.js"></script>
+        <script>
+
+            jQuery(function($)
+            {
+                $.scrollTo(0);
+                $('#link1').click(function(){ $.scrollTo($('#about'), 500); });
+            }
+           );
+           jQuery(function($)
+            {
+                $.scrollTo(0);
+                $('#link2').click(function(){ $.scrollTo($('#education'), 500); });
+            }
+           );
+           jQuery(function($)
+            {
+                $.scrollTo(0);
+                $('#link3').click(function(){ $.scrollTo($('#skill'), 500); });
+            }
+           );
+           jQuery(function($)
+            {
+                $.scrollTo(0);
+                $('#link4').click(function(){ $.scrollTo($('#github'), 500); });
+            }
+           );
+            jQuery(function($)
+            {
+                $.scrollTo(0);
+                $('#link-up').click(function(){ $.scrollTo($('#navigation'), 500); });
+            }
+           );
+
+           //pojawienie sie upa
+           $(window).scroll(function()
+           {
+            if($(this).scrollTop()>300) $(' .up-div').fadeIn();
+            else $(' .up-div').fadeOut();
+           }
+           );
+        </script>
     </head>
     <body>
-        <nav>
+        <nav id="navigation">
             <ul>
-                <li><a>About me</a></li>
-                <li><a>My Education</a></li>
-                <li><a>My Skills</a></li>
-                <li><a>Projects on github</a></li>
-                <li><a>Placeholder</a></li>
+                <li><a id="link1" href="#">About me</a></li>
+                <li><a id="link2" href="#">My Education</a></li>
+                <li><a id="link3" href="#">My Skills</a></li>
+                <li><a id="link4" href="#">Projects on github</a></li>
+                <li><a><i class="fas fa-bars"></i></a></li>
             </ul>
         </nav>
-        <div>Hello World</div>
-        <div>W tym miejscu powstaje moje Portfolio</div>
+        <div class="curriculum">Curriculum Vitae</div>
+        <h1 id="about"> About me </h1>
+        <div  class="about_me">
+            <div class="descrption">
+                Hi, I am student of third year IT Studies on PJATK and i am looking for job in IT to start work. Since HighSchool i was working in many places like gastronomy, exhibitions, offices or events as staff.
+            </div>
+        </div>
+        <h1 id="education">  My Education </h1>
+        <div  class="Education">
+            <div class="Studies">
+                <div id="StudiesName">Polsko-Japońska Akademia Technik Komputerowych</div>
+                <div id="StudiesYears">2019 - Current Day</div>
+                <div id="StudiesSpecialization">Specialization - Programming of business applications</div>
+            </div>
+        </div>
+        <h1  id="skill"> My Skills </h1>
+        <div class="Skills">
+            <div class="ITSkills">
+                <div class="techstack-title">Current TechStack:</div>
+                <div class="techstack-list">
+                    <div class="techstack-list-option">
+                        <div><i class="fab fa-java"></i></div>
+                        <div class="techstack-text">Java 8/11</div>
+                    </div>
+                    <div class="techstack-list-option">
+                        <i class="fas fa-database"></i>
+                        <div class="techstack-text">SQL</div>
+                    </div>
+                    <div class="techstack-list-option">
+                        <i class="fab fa-html5"></i>
+                        <div class="techstack-text">HTML5</div>
+                    </div>
+                    <div class="techstack-list-option">
+                        <i class="fab fa-node"></i>
+                        <div class="techstack-text">Node.js</div>
+                    </div>
+                    <div class="techstack-list-option">
+                        <i class="fab fa-css3-alt"></i>
+                        <div class="techstack-text">CSS3</div>
+                    </div>
+                    <div class="techstack-list-option">
+                        <i class="fab fa-js-square"></i>
+                        <div class="techstack-text">Javascript</div>
+                    </div>
+                    <div class="techstack-list-option">
+                        <i class="fab fa-git-alt"></i>
+                        <div class="techstack-text">Git</div>
+                    </div>
+                </div>
+            </div>
+            <div class="OtherSkills">
+                <div class="techstack-title">Other ablitities:</div>
+                <div class="other-list">
+                    <div class="other-list-option">
+                        <div class="other-list-option-bar">
+                            <img src="https://i1.wp.com/peppoj.net/wp-content/uploads/2010/09/gimpicon.png">
+                            <div class="other-list-option-bar-name">GIMP</div>
+                        </div>
+                        <div class="ther-list-option-text">Image editing and creation of graphics for private usage and occasionally for commercial usage of family members</div>
+                    </div>
+                    <div class="other-list-option">
+                        <div class="other-list-option-bar">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg/1200px-Microsoft_Office_logo_%282019%E2%80%93present%29.svg.png">
+                            <div class="other-list-option-bar-name">Microsoft Office</div>
+                        </div>
+                        <div class="ther-list-option-text">Decent knowlegde about Microsoft Office programs like Excel or Acces</div>
+                    </div>
+                    <div class="other-list-option">
+                        <div class="other-list-option-bar">
+                            <img src="https://image.flaticon.com/icons/png/512/1377/1377975.png">
+                            <div class="other-list-option-bar-name">English</div>
+                        </div>
+                        <div class="ther-list-option-text"> At B2 level since mature exam, which i pass then at 72%. Sufficient to read and write documentation</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 id="github"> Projects on github </h1>
+            <div  class="my-projects">
+                <div class="project-description">
+                   <div class="project-name">Implementation of Path Finding Algortihm</div>
+                   <img class="project-image" src="images/image1.jpg">
+                   <div class="project-desc">Made for studies as a part of subject "Algorithms and Data Structures". Later on after I had bought book about JavaFX Framework, i made for him simple GUI to make program more complex</div>
+                </div>
+                <div class="project-description">
+                    <div class="project-name">Phrase Finder</div>
+                    <img class="project-image" src="images/graphic.jpg">
+                    <div class="project-desc">As name suggest this progeam find every appearance of specified word i catalog of files. I had written this program to make finding certain variables in numerous files. Of cource I could find every appearance in other way but i wanted to make something usefull in java for myself</div>
+
+                </div>
+                <div class="project-description">
+                    <div class="project-name">Conway simulator</div>
+                    <img class="project-image" src="images/graphic.jpg">
+                    <div class="project-desc">Implementation of popular game "Game of life" with rules based of these created by John Conway. In this program you can define "alive" cells by mouse and later on by button create next "generation" of living cells. Program was originally created as a part of subject "Basics of computer Simulation".</div>
+
+                </div>
+            </div>
+        <div class="up-div"><a id="link-up" href="#"><i class="fas fa-chevron-up"></i></a></div>
+        <footer>2021 made by Paweł Borowiec</footer>
     </body>
 </html>
