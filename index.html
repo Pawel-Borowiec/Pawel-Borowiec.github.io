@@ -6,47 +6,7 @@
         <script src="https://kit.fontawesome.com/da940a54b6.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/jquery.scrollTo.min.js"></script>
-        <script>
-
-            jQuery(function($)
-            {
-                $.scrollTo(0);
-                $('#link1').click(function(){ $.scrollTo($('#about'), 500); });
-            }
-           );
-           jQuery(function($)
-            {
-                $.scrollTo(0);
-                $('#link2').click(function(){ $.scrollTo($('#education'), 500); });
-            }
-           );
-           jQuery(function($)
-            {
-                $.scrollTo(0);
-                $('#link3').click(function(){ $.scrollTo($('#skill'), 500); });
-            }
-           );
-           jQuery(function($)
-            {
-                $.scrollTo(0);
-                $('#link4').click(function(){ $.scrollTo($('#github'), 500); });
-            }
-           );
-            jQuery(function($)
-            {
-                $.scrollTo(0);
-                $('#link-up').click(function(){ $.scrollTo($('#navigation'), 500); });
-            }
-           );
-
-           //pojawienie sie upa
-           $(window).scroll(function()
-           {
-            if($(this).scrollTop()>300) $(' .up-div').fadeIn();
-            else $(' .up-div').fadeOut();
-           }
-           );
-        </script>
+        <script type="text/javascript" src="js/script.js"></script>
     </head>
     <body>
         <nav id="navigation">
@@ -55,7 +15,6 @@
                 <li><a id="link2" href="#">My Education</a></li>
                 <li><a id="link3" href="#">My Skills</a></li>
                 <li><a id="link4" href="#">Projects on github</a></li>
-                <li><a><i class="fas fa-bars"></i></a></li>
             </ul>
         </nav>
         
@@ -151,8 +110,8 @@
                 </div>
                 <div class="project-description">
                     <div class="project-name">Conway simulator</div>
-                    <img class="project-image" src="images/graphic.jpg">
-                    <div class="project-desc">Implementation of popular game "Game of life" with rules based of these created by John Conway. In this program you can define "alive" cells by mouse and later on by button create next "generation" of living cells. Program was originally created as a part of subject "Basics of computer Simulation".</div>
+                    <img class="project-image" src="images/conway.jpg">
+                    <div class="project-desc">Implementation of popular game "Game of life" with rules based of these created by John Conway. In this program you can define "alive" cells by mouse and later on by button create next "generation" of living cells. Program was originally created as a part of subject "Fundamentals of computer simulations".</div>
 
                 </div>
             </div>
