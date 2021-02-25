@@ -5,6 +5,10 @@ body {
     flex-direction: column;
 }
 
+div {
+    font-family: 'Nova Flat';
+    font-size: 18px;
+}
 nav ul {
     list-style-type: none;
     margin-right: 0%;
@@ -228,6 +232,20 @@ h1{
     text-align: center;
     color:#222 
 }
+
+.github-text{
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+}
+
+.git-link{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
 
 .up-div a:link{
     color: white;
