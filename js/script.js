@@ -24,6 +24,12 @@ jQuery(function($){
 
 jQuery(function($){
     $.scrollTo(0);
+    $('#link5').click(function(){ $.scrollTo($('#languages'), 500); });
+}
+);
+
+jQuery(function($){
+    $.scrollTo(0);
     $('#link-up').click(function(){ $.scrollTo($('#navigation'), 500); });
 }
 );
